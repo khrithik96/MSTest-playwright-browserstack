@@ -29,12 +29,12 @@ This sample elaborates the [MSTest](https://docs.microsoft.com/en-us/dotnet/core
 
 - To run the single test, execute the following command:
     ```bash
-    dotnet test --filter ClassName=MSTest_Playwright_BrowserStack.SampleTest
+    dotnet test --filter TestCategory=sample-test
     ```
 
 - To run local tests, execute the following command:
     ```bash
-   dotnet test --filter ClassName=MSTest_Playwright_BrowserStack.SampleLocalTest
+   dotnet test --filter TestCategory=sample-local-test
     ```
 
 Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
