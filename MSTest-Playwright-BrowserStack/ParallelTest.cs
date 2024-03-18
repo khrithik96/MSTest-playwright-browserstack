@@ -1,7 +1,7 @@
 ﻿namespace MSTest_Playwright_BrowserStack
 {
     [TestClass]
-    [TestCategory("parallel-test")]
+    [TestCategory("sample-parallel-test")]
     public class ParallelTest
     {
         [TestMethod]
