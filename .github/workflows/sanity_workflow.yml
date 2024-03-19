@@ -56,10 +56,10 @@ jobs:
         run: dotnet build
 
       - name: Run sample tests
-        run: dotnet test --filter ClassName=MSTest_Playwright_BrowserStack.SampleTest
+        run: dotnet test --filter TestCategory=sample-test
 
       - name: Run local tests
-        run: dotnet test --filter ClassName=MSTest_Playwright_BrowserStack.SampleLocalTest
+        run: dotnet test --filter TestCategory=sample-local-test
 
       - if: always()
         uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975
