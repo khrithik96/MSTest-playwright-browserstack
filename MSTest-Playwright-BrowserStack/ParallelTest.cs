@@ -5,27 +5,12 @@
     public class ParallelTest
     {
         [TestMethod]
-        public async Task Chrome()
+        [DataRow("parallel", "chrome", "parallel.conf.json")]
+        [DataRow("parallel", "playwright-firefox", "parallel.conf.json")]
+        [DataRow("parallel", "playwright-webkit", "parallel.conf.json")]
+        public async Task SearchBstackDemo(string profile, string environment, string configFile)
         {
-            var singleTest = new SingleTest("parallel", "chrome", "parallel.conf.json");
-            await singleTest.Init();
-            await singleTest.SearchBstackDemo();
-            await singleTest.Cleanup();
-        }
-
-        [TestMethod]
-        public async Task PlaywrightFirefox()
-        {
-            var singleTest = new SingleTest("parallel", "playwright-firefox", "parallel.conf.json");
-            await singleTest.Init();
-            await singleTest.SearchBstackDemo();
-            await singleTest.Cleanup();
-        }
-
-        [TestMethod]
-        public async Task PlaywrightWebkit()
-        {
-            var singleTest = new SingleTest("parallel", "playwright-webkit", "parallel.conf.json");
+            var singleTest = new SingleTest(profile, environment, configFile);
             await singleTest.Init();
             await singleTest.SearchBstackDemo();
             await singleTest.Cleanup();
