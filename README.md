@@ -4,7 +4,7 @@ This sample elaborates the [MSTest](https://docs.microsoft.com/en-us/dotnet/core
 
 <img src="assets/browserstack.png" width=30 height=25> <img src="assets/MSTest.png" width=50 height=25> 
 
-> To perform tests using SDK, please checkout the sdk branch
+> To perform tests using legacy, please checkout the main branch
 
 ## Setup
 
@@ -16,24 +16,9 @@ This sample elaborates the [MSTest](https://docs.microsoft.com/en-us/dotnet/core
     ```bash
     dotnet restore
     ```
-4. Build the solution
-
-### Adding Credentials
-
-1. Add your BrowserStack Username and Access Key to the `*.conf.json` files in the project. 
-   
-    ```json
-    {
-        "user": "BROWSERSTACK_USERNAME",
-        "key": "BROWSERSTACK_ACCESS_KEY",
-    }
-    ```
-
-2. Alternatively, you can set environment variables:
-    - `BROWSERSTACK_USERNAME`
-    - `BROWSERSTACK_ACCESS_KEY`
-
-You can get your browserstack credentials from [here](https://www.browserstack.com/accounts/profile/details)
+4. To run tests on private websites,
+    - set `browserstackLocal`: `true` at `browserstack.yml`
+5. Build the solution
 
 ### Running Tests
 
@@ -47,17 +32,23 @@ You can get your browserstack credentials from [here](https://www.browserstack.c
     dotnet test --filter TestCategory=sample-test
     ```
 
-- To run tests in parallel, execute the following command:
-    ```bash
-    dotnet test --filter TestCategory=sample-parallel-test
-    ```
-
 - To run local tests, execute the following command:
     ```bash
-    dotnet test --filter TestCategory=sample-local-test
+   dotnet test --filter TestCategory=sample-local-test
     ```
 
 Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
+
+## Integrate your test suite
+
+This repository uses the BrowserStack SDK to run tests on BrowserStack. Follow the steps below to install the SDK in your test suite and run tests on BrowserStack:
+
+* Create sample browserstack.yml file with the browserstack related capabilities with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/profile/details) and place it in your root folder.
+* Add nuget library BrowserStack.TestAdapter
+```sh
+dotnet add BrowserStack.TestAdapter
+```
+* Build project `dotnet build`
 
 ## Notes
 * You can view your test results on the [BrowserStack automate dashboard](https://www.browserstack.com/automate)
