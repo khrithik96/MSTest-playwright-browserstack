@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1706.9
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTest-Playwright-BrowserStack", "MSTest-Playwright-BrowserStack\MSTest-Playwright-BrowserStack.csproj", "{5C3F4D3E-A94B-4D92-9F11-173BAE295802}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTest-Playwright-BrowserStack", "MSTest-Playwright-BrowserStack\MSTest-Playwright-BrowserStack.csproj", "{F120B302-7C89-4579-823E-824DC2C417D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C3F4D3E-A94B-4D92-9F11-173BAE295802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C3F4D3E-A94B-4D92-9F11-173BAE295802}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C3F4D3E-A94B-4D92-9F11-173BAE295802}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C3F4D3E-A94B-4D92-9F11-173BAE295802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F120B302-7C89-4579-823E-824DC2C417D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F120B302-7C89-4579-823E-824DC2C417D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F120B302-7C89-4579-823E-824DC2C417D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F120B302-7C89-4579-823E-824DC2C417D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FEE4FF58-EE32-428A-943A-0AE07CA5772A}
+		SolutionGuid = {C323B969-597B-4802-AE48-2BD7B2044DE2}
 	EndGlobalSection
 EndGlobal
